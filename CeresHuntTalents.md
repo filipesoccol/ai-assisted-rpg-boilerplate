@@ -1,0 +1,18 @@
+- Fighter: +1 to combat
+- Evasion: +1 to traps/environment
+- Pilot: +1 to escape/maneuvers
+- Healing: Once per adventure, heal an injury or revive a dead CHARACTER (to injured).
+- Technician: +1 to repair/maintenance challenges
+- Navigator: +1 to navigation/pathfinding decisions
+- Diplomat: +1 to negotiation/social encounters
+- Salvager: +1 when scavenging resources/equipment
+- Tactician: +1 to strategic planning/ambush scenarios
+- Engineer: +1 to ship modification/upgrade challenges
+- Scout: +1 to reconnaissance/exploration decisions
+- Medic: Once per adventure, prevent an injury from becoming fatal
+- Gunner: +1 to ranged combat/weapon systems
+- Saboteur: +1 to stealth/sabotage missions
+- Defender: +1 when protecting others/defensive actions
+- Hacker: +1 to electronic/system infiltration
+- Technician: +1 to repair/maintenance challenges
+- Navigator: +1 to navigation/pathfinding decisions

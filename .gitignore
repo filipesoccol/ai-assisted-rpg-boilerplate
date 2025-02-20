@@ -1,0 +1,6 @@
+# Vector database
+database/
+
+# Environment variables
+.env
+node_modules

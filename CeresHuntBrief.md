@@ -1,0 +1,9 @@
+## CERES HUNT HISTORY
+
+After the last overheating event that resulted in the extinction of life on Earth's surface, larger marine species went extinct due to the lack of food supply, essentially all marine mammals disappeared.
+Some marine species became the main predators on Earth, initiating the Age of Mollusks. Over time, technological advancements, space discoveries, and knowledge about ancient human civilizations led to the third renaissance, a period during which marine beings assimilated advanced human technologies, producing technological and cultural leaps.
+A long time has passed since then, and the Northern Federation created a calendar based on oceanic cycles. Despite all these challenges, these dominant species managed to triumph and develop a well-organized society. Technology evolved rapidly using a combination of mineral and organic structures, allowing this civilization to develop various methods of propulsion and life support.
+Starting from the idea of seeking raw materials throughout the solar system, factories and stations were built in Earth's orbit. Manufacturing equipment from minerals in orbit facilitated the production and launch of new equipment for space work.
+Transport ships were initially operated remotely, eliminating the need for life support. However, as operations reached the Kuiper Belt, these ships required on-site operation due to communication delays.
+Advancements in propulsion technology allowed for reduced travel time for these vessels, but they still required considerable time for acceleration and braking.
+It is the year 2001 in the federation's calendar. A giant wormhole appeared in our dimension, separating Earth from Ceres, and its gravity is causing multiple anomalies in the solar system. Multiple misteries lies from there. No one has noticed if Ceres still exists.
