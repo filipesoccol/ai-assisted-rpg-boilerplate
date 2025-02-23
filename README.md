@@ -12,9 +12,15 @@ At the end of the adventure the AI could also add new entries to the Knowledge B
 
 Install Bun so you don't need to compile the Typescript and runs app faster.
 
-[bun.sh v1.2.2](https://bun.sh)
+[bun.sh v1.2.2 or higher](https://bun.sh)
 
-To install dependencies:
+A ChatGPT API key should be filled in `.env` file, check `.env.example`:
+
+```sh
+CHATGPT_API=sk-proj-...
+```
+
+## Installation
 
 ```bash
 bun install
@@ -23,7 +29,7 @@ bun install
 To create the vector database
 
 ```bash
-bun run build-database
+bun build-database
 ```
 
 Obs: Build Database will basically grab all entries on CeresHuntFacts.md and add each one of them as an embedding.
@@ -31,7 +37,7 @@ Obs: Build Database will basically grab all entries on CeresHuntFacts.md and add
 To run:
 
 ```bash
-bun run start
+bun start
 ```
 
 ## File Structure

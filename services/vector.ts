@@ -1,6 +1,7 @@
 import { LocalIndex, type MetadataTypes } from 'vectra';
 import path from "path";
 import { log } from '@clack/prompts';
+import boxen from 'boxen';
 
 const index = new LocalIndex(path.join(__dirname, '..', 'database'));
 if (!await index.isIndexCreated()) {
@@ -12,7 +13,8 @@ export async function addItem(vector: number[], metadata: Record<string, Metadat
         vector: vector,
         metadata: metadata
     });
-    log.info(`Another fact added to Ceres Hunt Lore: ${metadata.fact}`);
+    log.warn(boxen(metadata.fact as string, { title: 'Lore Fact', padding: 1, width: 100 }));
+    return metadata;
 }
 
 export async function query(vector: number[]) {

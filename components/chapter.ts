@@ -102,3 +102,36 @@ export const contextualizeAndQuery = async (message: string, gameState: GameStat
     return llmResponse;
 }
 
+export const grabFactFromChapter = async () => {
+
+    // Keep only the first Developer message
+    messages = messages.filter((msg, index) => msg.role !== 'developer' || index === 0);
+
+    // Add the Game State overview to the message array
+    messages.push({
+        role: 'developer',
+        content: `
+        Based on the whole conversation and narrative.
+        What is the most important piece of the puzzle that the crew discovered?
+        Respond in a single sentence some piece of information that could be useful for the future adventurers.
+        The information should be written as a third party writter that doesn't know the name of the crew member or the ship.
+        `
+    });
+
+    // Based on the story present in the narrative, ask a for a discovery made by the crew.
+    const s = spinner();
+    s.start('Asking for a new fact...');
+    const newFact = await getCompletion(messages as ChatCompletionMessageParam[]);
+    s.stop('Adding information to Ceres Hunt Lore.');
+
+    if (newFact) {
+        const inputText = `Year: ${new Date().getFullYear()} - ${newFact}`;
+        const embed = await getEmbedding(inputText);
+        await addItem(embed, {
+            year: new Date().getFullYear(),
+            fact: newFact || '',
+        });
+    }
+
+    return newFact || 'No Relevant information discovered.';
+}

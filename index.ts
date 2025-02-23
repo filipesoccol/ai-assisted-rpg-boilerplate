@@ -4,7 +4,7 @@ import chalk from 'chalk';
 import figlet from 'figlet';
 
 import { initializeAdventure } from './components/startup';
-import { initializeChapter, contextualizeAndQuery } from './components/chapter';
+import { initializeChapter, contextualizeAndQuery, grabFactFromChapter } from './components/chapter';
 import { CharacterStatus, GameState, type Character } from './components/state';
 import boxen from 'boxen';
 
@@ -44,7 +44,7 @@ const chapter = await initializeChapter(gameState);
 log.warn(boxen(chapter || '', { title: 'Adventure starts', padding: 1, width: 100 }));
 
 // Initialize Chapters Loop
-while (true) {
+while (gameState.chapter < 10) {
 
   // List characters to choose for risk
   const charactersList = await gameState.getCharacters();
@@ -92,10 +92,7 @@ while (true) {
     }
   }
 
-  //       updateCharacter(JSON.parse(update.text));
-  //     } catch (error: any) {
-  //       console.log(`Error updating character: ${error.message}`);
-  //     }
-  //   }
-
+  gameState.increaseChapter();
 }
+
+const fact = await grabFactFromChapter();
